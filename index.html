@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On-Page SEO Checklist: A Practical Guide to Improving One Page at a Time</title>
+  <meta name="description" content="A practical guide to the On-Page SEO Checklist. Learn how to choose keywords, write titles and meta descriptions, organize headings, improve content, and use a page-level SEO checklist to make real, verifiable edits.">
+  <!-- Meta tags for search engines (index, follow) -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+      background: #f6f9fc;
+      color: #1c2a36;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 20px 50px rgba(0, 20, 40, 0.08);
+      padding: 2.6rem 2.3rem;
+    }
+    h1 {
+      font-size: 2.35rem;
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      color: #0c2e4e;
+      border-left: 6px solid #1e7be0;
+      padding-left: 1.2rem;
+      margin-bottom: 1.6rem;
+      line-height: 1.2;
+    }
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #0c2e4e;
+      margin: 2.3rem 0 1rem 0;
+      padding-bottom: 0.4rem;
+      border-bottom: 2px solid #e6edf5;
+    }
+    h3 {
+      font-size: 1.28rem;
+      font-weight: 600;
+      color: #1a3d5e;
+      margin: 1.7rem 0 0.6rem 0;
+    }
+    p {
+      margin-bottom: 1.15rem;
+      font-size: 1.05rem;
+      color: #1e2b3a;
+    }
+    a {
+      color: #1a6fd6;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted rgba(26, 111, 214, 0.3);
+      transition: border 0.2s;
+    }
+    a:hover {
+      border-bottom: 2px solid #1a6fd6;
+    }
+    ul, ol {
+      margin: 0.8rem 0 1.3rem 2rem;
+    }
+    li {
+      margin-bottom: 0.55rem;
+      font-size: 1.02rem;
+    }
+    .highlight {
+      background: #f0f7ff;
+      padding: 0.15rem 0.4rem;
+      border-radius: 7px;
+      font-weight: 500;
+      color: #0c2e4e;
+    }
+    .example-box {
+      background: #fbfdff;
+      border: 1px solid #dbe8f4;
+      border-radius: 20px;
+      padding: 1.7rem 2rem;
+      margin: 1.9rem 0;
+    }
+    .example-box h3 {
+      margin-top: 0;
+      color: #0c2e4e;
+      font-size: 1.35rem;
+      border-left: 5px solid #1e7be0;
+      padding-left: 0.9rem;
+    }
+    .example-label {
+      display: inline-block;
+      background: #eaf3fc;
+      color: #0c2e4e;
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.9rem;
+      border-radius: 30px;
+      margin-bottom: 1rem;
+    }
+    .before-after {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 1.1rem 0;
+    }
+    .before, .after {
+      border-radius: 14px;
+      padding: 1.1rem 1.3rem;
+      font-size: 0.98rem;
+    }
+    .before {
+      background: #fdf3f2;
+      border: 1px solid #f3cfcc;
+    }
+    .after {
+      background: #f1faf5;
+      border: 1px solid #c8e9d5;
+    }
+    .before strong, .after strong {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .before strong { color: #a33a33; }
+    .after strong { color: #1f7a4d; }
+    .why-note {
+      background: #f3f8fe;
+      border-left: 4px solid #1e7be0;
+      padding: 0.9rem 1.3rem;
+      border-radius: 12px;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    .why-note strong { color: #0c2e4e; }
+    .cta-note {
+      background: #eaf3fc;
+      border-left: 6px solid #1e7be0;
+      padding: 1.5rem 2rem;
+      border-radius: 18px;
+      margin: 2.3rem 0;
+    }
+    .cta-note strong { color: #0c2e4e; }
+    .footer-note {
+      margin-top: 2.8rem;
+      font-size: 0.95rem;
+      color: #4d637a;
+      border-top: 1px solid #dce5ef;
+      padding-top: 1.8rem;
+      text-align: center;
+    }
+    @media (max-width: 650px) {
+      .container { padding: 1.5rem; }
+      h1 { font-size: 1.9rem; padding-left: 0.8rem; }
+      h2 { font-size: 1.5rem; }
+      .before-after { grid-template-columns: 1fr; }
+      .example-box { padding: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>On-Page SEO Checklist: A Practical Guide to Improving One Page at a Time</h1>
+
+    <p>Most SEO advice fails for the same reason most diet advice fails: it is too broad to act on. "Optimize your content" sounds helpful until you open a page and realize you have no idea where to start. Should you change the title? Rewrite the introduction? Add a heading? The options blur together, and the page stays exactly as it was.</p>
+
+    <p>The <a href="https://getseochecklist.com/on-page-seo-checklist/" target="_blank" rel="noopener">On-Page SEO Checklist</a> from getseochecklist.com solves this by doing something refreshingly specific: it focuses on one page at a time. It shows you how to choose keywords, write title tags and meta descriptions, organize headings, improve content, and optimize images and links. Each check has a purpose, a pass condition, a fail condition, a fix, and a retest step. You work in your site editor, then check the published page. That is it.</p>
+
+    <p>This article explains the philosophy behind the checklist, walks through its most important stages in plain language, and then demonstrates something practical: an original, clearly labeled example of improving a vague title, answer, heading, and next step. Throughout, we will treat <a href="https://getseochecklist.com/on-page-seo-checklist/" target="_blank" rel="noopener">a page-level SEO checklist</a> as exactly what it is—a working tool for making real, verifiable edits rather than a scoring exercise.</p>
+
+    <h2>Why One Page at a Time Works Better</h2>
+
+    <p>Site-wide SEO advice tends to produce site-wide procrastination. When the instruction is "improve all your pages," the natural response is to plan a big project, schedule it for next quarter, and never start. A page-level SEO checklist flips that dynamic. It asks a much smaller, answerable question: what does this one page need?</p>
+
+    <p>The checklist is organized around that question. It begins with keyword selection, moves through titles and descriptions, then headings and content, then internal links and images, and finishes with indexing, mobile usability, page speed, structured data, and a review of the published page. Each section is a small, concrete task with a visible finish line. You do not need to be an SEO expert to complete it; you need access to the page and the willingness to look at the actual result.</p>
+
+    <p>What makes this approach genuinely useful is its honesty. The checklist states plainly that around 50–60 characters is a first-draft guide for titles, not a Google limit. It notes that roughly 140–160 characters is a draft guide for meta descriptions, not a rule. It reminds you that a completed check does not guarantee indexing, traffic, or rankings. That realism keeps the focus where it belongs: on making the page clearer for the reader.</p>
+
+    <h2>Stage One: Choose Primary and Supporting Keywords</h2>
+
+    <p>On-page keyword work connects a real search to the page you are building. The checklist starts with one main phrase—a phrase your intended reader would actually use for the product, service, resource, or question the page covers. For an existing page, you can filter Search Console's Performance report to its URL and review relevant queries. One primary keyword gives your writing focus, while the page can still answer closely related searches.</p>
+
+    <p>Supporting keywords come next. Collect related customer questions, relevant Search Console queries, and useful subtopics from search results. Group terms that need the same explanation, then give each group a place in the outline. Use them naturally in headings and paragraphs. There is no required number of secondary keywords, and no need for a separate section per spelling variation.</p>
+
+    <p>The third check is search intent—what someone wants to learn, compare, find, or do. Search the main phrase in your audience's language and market, inspect useful results, and choose a format that fulfills the task. A sales pitch alone cannot satisfy a search for usable instructions. Use results to understand expectations, not as copy to imitate.</p>
+
+    <h2>Stage Two: Write Titles, Descriptions, and Readable URLs</h2>
+
+    <p>Titles and descriptions help readers recognize the page before they open it. The checklist asks for a specific SEO title that uses the main phrase naturally plus an accurate distinction such as the real service area. "Boiler Repair in Bristol | Example Heating" tells the reader more than "Services." Preview the title, remove repetition, and inspect the published browser-tab title rather than relying on the editor preview.</p>
+
+    <p>A page-specific meta description summarizes the answer or service, adds a specific benefit, and suggests a relevant next step. Roughly 140–160 characters is a draft guide, not a Google limit—Google may use page text instead. A missing description leaves the task unfinished, though it is not itself a ranking penalty. Confirm the published text by searching the page source for the description tag.</p>
+
+    <p>Readable URL slugs matter for new pages. Choose a descriptive path using the main subject naturally and your site's conventions. Do not rename a working established address merely to add a keyword or shorten it. A justified move needs an appropriate redirect and updated internal links. There is no universal slug length.</p>
+
+    <h2>Stage Three: Use Headings to Explain the Page</h2>
+
+    <p>Headings show the main topic and the sections that support it. The checklist asks for one clear main H1 that names the page's subject, including the primary phrase or a natural variation. "Boiler Repair in Bristol" is more informative than "Welcome" when the page actually offers that service in that area. A clear main heading is a practical convention; an exact H1 count is not a universal ranking requirement.</p>
+
+    <p>Descriptive H2s and H3s divide the page into useful topics rather than repeated keywords. Put relevant supporting topics in headings where they describe the answer beneath them. Do not turn ordinary sentences into headings merely to repeat keywords, or choose a heading level only for its font size. Preview the resulting outline and read it without the body—if the structure makes sense, the headings are doing their job.</p>
+
+    <p>The opening should give readers useful information before background or promotion. Write the central answer near the beginning, then put necessary conditions beside it. A service page should explain what is offered and where; a guide should give its usable answer or first step. Add a verified detail or a clearly labeled original example. There is no required paragraph length.</p>
+
+    <h2>Stage Four: Add Useful Content and Truthful Trust Information</h2>
+
+    <p>Useful on-page content answers the questions that affect a reader's decision. The checklist asks you to check prices, coverage, dates, inclusions, and factual claims against current reliable information. Replace generic promises with details the page can substantiate. Add a real example, limitation, or useful explanation that competitors' summaries do not supply. Do not invent experience, measurements, or reviews.</p>
+
+    <p>Trust information matters where it is relevant. Where authorship matters, add the real writer or reviewer and relevant, verifiable experience. For a business page, make the real identity and contact route easy to find. Use truthful publication or update dates, and never change a date without a meaningful content update. "Reviewed by an expert" is not acceptable unless the review actually happened.</p>
+
+    <p>Keywords in the body should be used naturally, where they add meaning to the sentence. Read the copy aloud and replace awkward repetition with ordinary wording. There is no ideal keyword density or mandatory exact-match count. Add a paragraph because it answers a real question, not to insert another variation.</p>
+
+    <h2>Stage Five: Add Internal Links and Helpful Source Links</h2>
+
+    <p>Internal links connect related pages on your website. The checklist asks you to link a useful phrase to a relevant existing page, describing the destination naturally—"boiler maintenance checklist" rather than "click here"—then follow the link after publishing. Choose links for the reader's next question; there is no required three-to-five-link quota.</p>
+
+    <p>A new or important page also needs a route from elsewhere on the site. Find an existing relevant guide, service overview, or topic page and add a contextual link using wording that describes the destination. If you cannot edit that page, ask its owner. Avoid unrelated sitewide links.</p>
+
+    <p>Source links let readers inspect support for a factual claim when publishing them is appropriate. For an important factual claim, identify the original reliable source and check that it supports the wording. Link near the claim with a descriptive label and qualify paid or sponsored links appropriately.</p>
+
+    <h2>Stage Six: Prepare Images, Compression, and Alt Text</h2>
+
+    <p>Images should help explain the page without making it unnecessarily heavy. Give new image files short descriptive names using the subject naturally—"boiler-pressure-gauge.png" rather than "IMG_8437.png"—but avoid renaming an established image URL solely for cosmetics. Resize and compress images for their actual display, then compare file size and clarity before uploading.</p>
+
+    <p>Alt text explains an informative image when it cannot be seen. Describe the meaning needed in this page's context, using a relevant term only if natural. A linked image needs an accessible name explaining its destination or action. Pure decoration usually needs empty alt text. Do not repeat keywords, filenames, or a nearby caption without useful purpose.</p>
+
+    <h2>Stage Seven: Check Indexing, Mobile, Speed, and Structured Data</h2>
+
+    <p>Before finishing, confirm that the public page works and its technical settings match your intentions. An intended search page should be accessible and free of accidental indexing exclusions. Inspect it with Search Console's URL Inspection and check the editor's indexing setting. Correct accidental noindex or access blocks only on pages intended for search—private content needs access control. A passing live test does not guarantee indexing.</p>
+
+    <p>Open the published page on a phone or narrow screen. Read the main answer and inspect images, menus, and the primary action. Fix clipped content, overlapping controls, and difficult taps. A contact button that works on desktop but is covered by a mobile banner needs a layout fix, and a guide's diagram must remain readable without cutting off its labels.</p>
+
+    <p>For performance, run the page in PageSpeed Insights, separate real-user assessment from laboratory diagnostics, and investigate a relevant loading, interaction, or layout problem. Fix the actual cause and rerun comparable tests. Missing real-user data is not a failure, and a high laboratory score does not prove every visitor has a good experience.</p>
+
+    <p>Structured data describes actual page content in a machine-readable form. Choose a type that genuinely fits the page, enter accurate visible facts, and validate the published markup. Valid markup does not guarantee a rich result, and markup should never invent entities, ratings, dates, or details absent from the page.</p>
+
+    <h2>An Original Example: Improving a Vague Page</h2>
+
+    <p>The best way to understand the checklist is to see it applied. The example below is original and clearly labeled as illustrative. It uses a fictional business and fictional details—not a real case study, testimonial, or verified result—to show how four specific elements can be improved: the title, the answer, the heading, and the next step.</p>
+
+    <div class="example-box">
+      <span class="example-label">Illustrative example — fictional business</span>
+      <h3>Before: A Vague "Resources" Page</h3>
+      <p><strong>Page context:</strong> A small heating company has a page titled "Resources." The page opens with a short company introduction, mentions that the team cares about customers, and ends with a contact form. There is no checklist, download, or usable resource anywhere on the page.</p>
+
+      <div class="before-after">
+        <div class="before">
+          <strong>Before — Title tag</strong>
+          Resources | Example Heating
+        </div>
+        <div class="after">
+          <strong>After — Title tag</strong>
+          Boiler Maintenance Checklist | Example Heating
+        </div>
+      </div>
+
+      <div class="before-after">
+        <div class="before">
+          <strong>Before — Heading</strong>
+          Welcome to Our Resources Page
+        </div>
+        <div class="after">
+          <strong>After — Heading</strong>
+          Boiler Maintenance Checklist for Homeowners
+        </div>
+      </div>
+
+      <div class="before-after">
+        <div class="before">
+          <strong>Before — Opening answer</strong>
+          "We are a family-run heating company with years of experience. We care about our customers and want to help. Contact us today to learn more about what we do."
+        </div>
+        <div class="after">
+          <strong>After — Opening answer</strong>
+          "This boiler maintenance checklist covers the owner checks you can do yourself, the service records worth keeping, and the signs that mean you should book a professional inspection. Start with the weekly pressure check, then work through the seasonal steps below."
+        </div>
+      </div>
+
+      <div class="before-after">
+        <div class="before">
+          <strong>Before — Next step</strong>
+          "Contact us" button with no explanation of what happens next.
+        </div>
+        <div class="after">
+          <strong>After — Next step</strong>
+          "Download the printable checklist" link followed by "Request a boiler service estimate" with a one-line explanation of what to include in the request.
+        </div>
+      </div>
+
+      <div class="why-note">
+        <strong>Why these changes work:</strong> The title now names the actual resource rather than the category. The heading confirms the same subject, so the reader knows immediately that they have arrived at the right page. The opening answer delivers the promised checklist in the first sentence instead of delaying it with a company introduction. The next step offers a usable resource first and a clearly explained action second, rather than a bare contact button. No keyword was repeated unnaturally, and no invented authority was added—the improvement comes entirely from clarity.
+      </div>
+    </div>
+
+    <p>Notice what did not change. The page did not need more paragraphs, a higher keyword density, or a testimonial. It needed a specific subject, an immediate answer, a heading that matched, and a next step a reader could actually take. That is the pattern a page-level SEO checklist encourages: fix the clarity problem first, then verify the result on the published page.</p>
+
+    <h2>Stage Eight: Review the Published Page</h2>
+
+    <p>The published page is the result readers and search engines receive. Publish the changes, then open the actual page rather than relying on the editor preview. Check the title, description, main heading, revised copy, images, and changed links. Confirm caching has not left an older version visible. If the editor shows the new title but the public page still shows the old one, investigate publishing or caching rather than rewriting the title again.</p>
+
+    <p>Later search performance needs comparable observations. A completed edit does not guarantee more traffic. The checklist is explicit about this, and that honesty is what makes the workflow sustainable. You are not chasing a score; you are making the page clearer and then checking whether the change actually appeared.</p>
+
+    <h2>Using This as an On-Page SEO Audit Checklist</h2>
+
+    <p>For an existing page, start with its target query and current search intent, then work through the actual title, description, headings, content, images, and links. Correct a specific issue when you find one. This is how a page-level SEO checklist becomes an audit tool without turning into a sprawling project.</p>
+
+    <p>If a problem concerns server responses, robots rules, or rendering, the technical checklist is the right tool. If it affects several templates or requires a broader traffic investigation, the audit checklist applies. Knowing which checklist to reach for is part of using this one well—it keeps each review scoped to what it can actually solve.</p>
+
+    <h2>How Keywords Fit Into a Complete Page</h2>
+
+    <p>In a hypothetical local-service example, the main phrase is "boiler repair in Bristol." The title and H1 identify that real service and place. H2s describe genuine repair services, the actual service area, and the estimate process. Each paragraph explains the subject named in its heading. For an informational resource, the same relationship applies: a title that names the resource, a main heading that confirms it, and supporting sections that deliver the promised instructions.</p>
+
+    <p>This is the practical meaning of a page-level SEO checklist: keywords are not sprinkled on top of a page; they name the task the page performs. When the title, heading, and opening answer all describe the same real task, the page becomes easier to understand and easier to find. When they do not, no amount of repetition repairs the mismatch.</p>
+
+    <h2>Honest Limits, and Why They Build Trust</h2>
+
+    <p>The checklist is direct about what it is not. It is a manual workflow, not an automated crawler. It does not verify your answers, and a completed check does not guarantee indexing, traffic, or rankings. Results reflect the person completing the checklist, saved results stay in the browser, and untested is not a pass.</p>
+
+    <p>These limits are a feature, not a flaw. On-page SEO involves judgment—deciding whether a title is specific enough, whether an answer arrives early enough, whether a heading describes its section, whether a next step is usable. By refusing to pretend otherwise, a page-level SEO checklist encourages the behavior that actually improves pages: open the page, read it as a visitor would, fix the specific problem, and check the published result.</p>
+
+    <h2>Conclusion: A Clearer Page, One Check at a Time</h2>
+
+    <p>On-page SEO does not require a grand strategy or a perfect score. It requires a clear subject, an immediate answer, headings that describe their sections, and a next step a reader can take. The On-Page SEO Checklist provides a structured way to work through those elements one page at a time, with honest guidance about what each check can and cannot guarantee.</p>
+
+    <p>Used consistently, a page-level SEO checklist becomes more than a list of tasks. It becomes a habit: read the page as a visitor, identify the specific gap, make the edit, and verify the published result. That habit is what turns a vague "Resources" page into something a reader can actually use—and what makes the next page easier to improve.</p>
+
+    <div class="cta-note">
+      <p><strong>💡 Ready to improve a page?</strong> Work through the full On-Page SEO Checklist one page at a time, choose a result for each check, and inspect the published page after every change. Remember: a completed check is a record of judgment, not a guarantee of rankings—and clarity for the reader is the outcome worth measuring first.</p>
+    </div>
+
+    <div class="footer-note">
+      <p>On-Page SEO Checklist – a practical, evidence-based workflow for improving one page at a time.</p>
+    </div>
+  </div>
+</body>
+</html>
